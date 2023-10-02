@@ -1,0 +1,35 @@
+.box, .product, .posts {
+  padding: 30px 0;
+  border: 1px solid red;
+}
+
+.posts {
+  background-color: green;
+}
+
+.product {
+  background-color: gray;
+}
+
+.menu li a {
+  color: #333;
+}
+.menu li a.active, .menu li a:hover {
+  color: green;
+  border-bottom: 1px solid green;
+}
+.menu li a:hover {
+  color: red;
+}
+
+.product {
+  padding: 30px 0;
+  border: 1px solid #ccc;
+  background-color: green;
+}
+.product .container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=lythuyet.css.map */

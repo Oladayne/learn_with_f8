@@ -1,0 +1,16 @@
+body{
+    height: 2000px;
+}
+.back-to-top{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    background-color: red;
+    color: white;
+    border: 0;
+    cursor: pointer;
+    display: none;
+}
+.back-to-top.show{
+    display: block;
+}

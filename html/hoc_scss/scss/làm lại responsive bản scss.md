@@ -1,0 +1,25 @@
+@mixin column($name:""){
+    $prefix: "col"
+    @if ($name != ""){
+        $prefix: $prefix + "-" + $name;
+    }
+    @for $i from 1 through 12 {
+        .#{prefix}-#{$i}{
+            --column-size: #{$i};
+        }
+    }
+}
+$breakpoints (
+    sm : 576,
+    md : 768,
+    lg : 992,
+    xl : 1200,
+    xxl: 1400,
+);
+@each $name , $breakpoint in $breakpoints {
+    @media screen and ( min-width: #{$breakpoints}px)
+    {
+        @inclure column($name)
+        }
+    }
+    

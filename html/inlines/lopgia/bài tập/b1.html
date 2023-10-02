@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input:nth-of-type(1):checked ~ .content1, input:nth-of-type(1):checked ~ div
+        label:nth-of-type(1){
+            color: rgb(255, 0, 0);
+        }
+        input:nth-of-type(1):checked ~ .content1{
+            display: block;
+        }
+        input:nth-of-type(2):checked ~ .content2{
+            display: block;
+        }
+        input:nth-of-type(3):checked ~ .content3{
+            display: block;
+        }
+        input:nth-of-type(2):checked ~ .content2, input:nth-of-type(2):checked ~ div
+        label:nth-of-type(2){
+            color: rgb(0, 255, 21);
+        }
+        input:nth-of-type(3):checked ~ .content3, input:nth-of-type(3):checked ~ div
+        label:nth-of-type(3){
+            color: rgb(0, 132, 255);
+        }
+        input[type="radio"]{
+            display: none;
+        }
+        .content1,.content2,.content3 {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <input type="radio" name="color" id="red">
+    <input type="radio" name="color" id="green">
+    <input type="radio" name="color" id="blue">
+    <div>
+            <label for="red"><span>Red</span></label>
+            <label for="green"><span>Green</span></label>
+            <label for="blue"><span >Blue</span></label>
+    </div>
+    <hr>
+   
+    <div class="content1">
+        Lorem, 
+    </div>
+    <div class="content2">
+        Lorem, ipsum 
+    </div>
+    <div class="content3">
+        Lorem, ipsum dolor 
+    </div>
+
+</body>
+</html>

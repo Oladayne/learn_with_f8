@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .loading::before{
+            content: "";
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            border: 3px solid;
+            border-color: orange rgb(71, 50, 11) orangered transparent;
+            border-radius: 50%;
+            animation: spinner 1s ease infinite;
+        }   
+        .loading::after{
+            content: "Loading...";
+            display: inline-block;
+        }
+        @keyframes spinner{
+            /* from{
+                transform: rotate(0);
+            } */
+            to{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="loading">
+
+    </div>
+</body>
+</html>

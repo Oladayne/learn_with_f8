@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            border: none;
+            background-color: green;
+            margin: 30px auto;
+            color: white;
+            display: block;
+            padding: 10px 30px;
+            cursor: auto;
+            position: relative;
+            border-radius: 99px;
+        }
+        .box::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 50%;
+            left: 50%;
+            background: red;
+            transition: left 0.4s ease;
+            border-radius: 99px;
+        }
+        .box::after{
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 50%;
+            left: 50%;
+            background: red;
+            transition: right 0.4s ease;
+            border-radius: 99px;
+        }
+        .box:hover::before{
+            left: 0;
+        }
+        .box:hover::after{
+            right: 0;
+        }
+        .box span{
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div >
+      <button class="box"><span>đăng kí khóa học</span> </button>
+    </div>
+</body>
+</html>

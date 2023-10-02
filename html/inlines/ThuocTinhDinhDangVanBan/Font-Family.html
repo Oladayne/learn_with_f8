@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family:  sans-serif;
+            /*truyền tên font vừa tạo vào */
+            text-indent: 10px;
+            /*lùi đầu dòng*/
+        }
+        .content a {
+            /* text-decoration: underline overline line-through; */
+            text-transform: capitalize;
+            /*định dạng chữ */
+            letter-spacing: 3px ;
+            /* khoảng cách giữa các kí tự*/
+            word-spacing: 5px;
+            /*khoảng cách giữa các từ*/
+
+        }
+        .box{
+            word-wrap: break-word;
+            /*hết khung xuống dòng */
+        }
+        /* Nạp Font
+        @font-face{
+            font-family: Hung;
+            src: url("../font mình chọn");
+        } 
+        khi muốn dùng nhiều tính năng của nhiều font 1 lúc thì ta vẫn @font nhưng đặt tên giống nhau 
+        nó sẽ cho ra kết quả cuối cùng 
+        font-weight: thay đổi độ dày : giá trị sẽ từ 100-900: là bội số của 100
+        mặc định là 400 
+        font-weight: khi set cho nó tại thuộc tính gọi ra thì nó sẽ chọn font family có chỉ số gần nhất để lấy  
+        font-style: thay đổi độ nghiêng của văn bản : italic mặc định sẽ là normal */
+        /* nên để sans-serif hoặc 1 font nào đó để hỗ trợ trong việc các font khác không hoạt động hoặc chưa load xong 
+        text-decoration : underline overline line-through */
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="content">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis beatae tenetur, laudantium totam voluptates dicta iure, recusandae blanditiis atque ducimus quo repudiandae officiis magnam repellat sapiente neque ipsam repellendus sed.
+            </p>
+            <a href=""> Đăng ký khóa học</a>
+        </div>
+    </div>
+</body>
+</html>

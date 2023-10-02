@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .songs{
+            width: 300px;
+            margin: 30px 0;
+            border: 1px solid red;
+            padding: 15px;
+            counter-reset: song;
+        }
+        .songs .item{
+            padding: 10px 0;
+            border-bottom: 1px solid gray;
+            counter-increment: song;
+        }
+        
+        .songs .item::before{
+            content: "#" counter(song);
+            width: 30px;
+            height: 30px;
+            display: block;
+            float: left;
+            background: green;
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 30px;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="songs">
+        <div class="item">
+            <h2>Bai1</h2>
+            <p>Singer:abc</p>
+        </div>
+        <div class="item">
+            <h2>bai2</h2>
+           <p>Singer:abc</p>
+        </div>
+        <div class="item">
+            <h2>bai3</h2>
+           <p>Singer:abc</p>
+        </div>
+        <div class="item">
+            <h2>bai4</h2>
+           <p>Singer:abc</p>
+        </div>
+        <div class="item">
+            <h2>bai5</h2>
+           <p>Singer:abc</p>
+        </div>
+        <div class="item">
+            
+        </div>
+    </div>
+</body>
+</html>
+<!-- 
+    quy trinh dem tu dong css
+    1 khoi tao bo dem moi 
+    2 thuc hien bo dem 
+    3 
+ -->

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 300px;
+            border: 1px solid red;
+            margin: 30px auto;
+        }
+        .col1{
+            width: 100px;
+            height: 50px;
+            background-color: green;
+            color: white;
+            float: left;
+        }
+        .col2{
+            width: 100px;
+            height: 100px;
+            background-color: blueviolet;
+            color: white;
+            float: left;
+
+        }
+        .text{
+            clear: both;
+            display: block;
+        }
+        /* thuoc tinh float 
+        lam troi thanh phan sang ben trai hoac ben phai theo thanh phan cha truc tiep
+        cac gia tri 
+        -none
+        -left
+        -right  
+        khi them float thi chieeu cao chua boder se mat 
+        khac phuc bawngf overflow
+        thuoc tinh clear (trong cac thanh phan o duoi bi troi len )
+        tun dong troi cac thanh phan theo float
+        khi bi ngat bang clear thi float se ngung hieu luc 
+        nen tao ra 1 class
+        clear:both 
+        display block
+        du chieeu cao cuar the cha khi sd Float {
+         .box::after{
+            content:''
+            display: block
+            clear: both 
+        }*/
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="col1"></div>
+        <div class="col2"></div>
+        <p class="text">f8</p>
+    </div>
+</body>
+</html>

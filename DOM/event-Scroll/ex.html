@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ex.css">
+    <style>
+       .top {
+        position: fixed;
+        right: 10px;
+        bottom: 10px;
+        background: red;
+        color: #fff;
+        border: 0;
+        cursor: pointer;
+        display: none;
+      }
+
+      .top.show {
+        display: block;
+      }
+
+      * {
+        padding: 0;
+        margin: 0;
+      }
+
+      .header {
+        background: #ddd;
+        text-align: center;
+      }
+
+      .header h1 {
+        padding: 15px 0;
+      }
+
+      .header nav {
+        background: green;
+        padding: 10px 0;
+        color: #fff;
+      }
+      .header nav.fixed{
+        position: fixed;
+        inset: 0 0 auto 0;
+      }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>HEADER</h1>
+        <nav>Menu</nav>
+    </header>
+    <h1>Scroll Event</h1>
+    <button class="top"> back to top </button>
+    <button class="goto">Go to</button>
+    <script src="ex.js"></script>
+</body>
+</html>

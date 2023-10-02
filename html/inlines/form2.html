@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <div>
+            <label for="name">Họ Tên </label>
+            <!--for để forcus tạo ra outline để người dùng biết mình đang ở input nào-->
+            <input type="text" name="name " placeholder="Họ Và Tên " id="name">
+        </div>
+        <div>
+            <label for="age">Email </label>
+            <!--for để forcus tạo ra outline để người dùng biết mình đang ở input nào-->
+            <input type="email" name="email" placeholder="Email" id="email">
+        </div>
+        <div>
+            <label for="password">password</label>
+            <!--for để forcus tạo ra outline để người dùng biết mình đang ở input nào-->
+            <input type="password" name="password" placeholder="password" id="password">
+        </div>
+        <div>
+            <label for="age">Age </label>
+            <!--for để forcus tạo ra outline để người dùng biết mình đang ở input nào-->
+            <input type="number" step="0.1" name="age" placeholder="age" id="age">
+            <!--step là bước đi 
+            có thể set cho nó bước nhảy của số-->
+        </div>
+        <div>
+            <label for="avatar">Avatar</label>
+            <!--for để forcus tạo ra outline để người dùng biết mình đang ở input nào-->
+            <input type="file" name="avatar" placeholder="avatar" id="avatar">
+        </div>
+        <div>
+            <label for="">Gender</label>
+            <!--for để forcus tạo ra outline để người dùng biết mình đang ở input nào-->
+            <label for="">
+                <input type="radio" name="gender" value="2" checked>Nữ
+            </label>
+            <label for="">
+                <input type="radio">
+            </label>
+            <label for="">
+                <input type="radio">
+            </label>
+        </div>
+        <div>
+            <label for="">Bạn Biết đến tôi qua ai</label>
+            <!--for để forcus tạo ra outline để người dùng biết mình đang ở input nào-->
+            <label for="">
+                <input type="checkbox" name="gender" value="2" checked>Nữ
+            </label>
+            <label for="">
+                <input type="checkbox">
+            </label>
+            <label for="">
+                <input type="checkbox">
+            </label>
+        </div>
+        <div>
+            <label for="">Tin nhắn</label>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Tin nhắn"></textarea>
+            <!--selected là giá trị mặc định 
+            multiple tăng
+            hidden ẩn tiêu đề
+            input range thanh kéo-->
+
+        </div>
+        <hr/>
+        <button>Đăng Ký</button>
+    </form>
+</body>
+</html>

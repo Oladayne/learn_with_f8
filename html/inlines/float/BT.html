@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .box{
+            width: 300px;
+            margin: 30px auto;
+            border: 1px solid black;
+        }
+        .anh{
+            float: left;
+            margin-right: 10px;
+        }
+        .anh::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+       .anh2 img{
+        border-radius: 50%;
+        shape-outside:circle();
+        margin-right: 10px;
+        float: left;
+       }
+   
+    </style>
+</head>
+<body>
+        <section class="box">
+            <div class="anh">
+                <img src="https://i.pinimg.com/236x/b7/f2/66/b7f26608caee068375ce476b9f787297.jpg" alt="" width="100px" height="80px">
+            </div>
+            <div class="text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil necessitatibus rerum numquam recusandae corporis distinctio earum quae velit praesentium, ipsum vero quaerat cupiditate porro nemo eos veritatis aliquam voluptates sequi.</p>
+            </div>
+        </section>
+        <section class="box">
+            <div class="anh2">
+                <img src="https://i.pinimg.com/236x/b7/f2/66/b7f26608caee068375ce476b9f787297.jpg" alt="" width="80px" height="80px">
+            </div>
+            <div class="text2">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil necessitatibus rerum numquam recusandae corporis distinctio earum quae velit praesentium, ipsum vero quaerat cupiditate porro nemo eos veritatis aliquam voluptates sequi.</p>
+            </div>
+        </section>
+</body>
+</html>

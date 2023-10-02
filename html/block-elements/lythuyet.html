@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        blockquote{
+            border: 1px solid green;
+            border-left: 5px solid green;
+            box-shadow: 5px 5px 5px 5px gray;
+        }
+    </style>
+</head>
+<body>
+    <!--thẻ blockquote để chú thích nó sẽ tụt vào so với viền văn bản-->
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis quod minus quo ipsam modi, minima recusandae repudiandae provident aut nostrum! Possimus ipsum blanditiis, accusantium debitis rerum molestiae natus impedit commodi.</p>
+    <blockquote><p>Học Lập Trình để có lương 1000$</p></blockquote>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, deleniti enim sit dignissimos accusamus fuga repellat officia voluptates impedit ut non omnis temporibus, earum quas et nulla placeat eius debitis!</p>
+    <!--thẻ PRE giữ nguyên dạng văn bản muốn truyền vào web-->
+    <pre>h e l l o</pre>
+    <pre>
+        const title = document.QuerySelector('h1');
+        title.innerText=`F8`
+    </pre>
+    <!--trình duyệt sẽ dịch h1 và nó nhận định đấy vẫn là 1 thẻ html-->
+    <pre><h1>lập trình tại F8</h1></pre>
+    <!--để sửa chúng ta cần sửa bằng HTML entitie-->
+    <!--tránh hack web từ HTML DOM-->
+    <pre>&lt;h1&gt;Học Lập Trình f8 &lt;/h1&gt;</pre>
+    <pre><h1>Nguyễn &nbsp;&nbsp;&nbsp;&nbsp; Ngọc&nbsp;&nbsp;&nbsp;&nbsp; Hùng </h1></pre>
+    <hr/>
+</body>
+</html>

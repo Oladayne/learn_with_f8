@@ -1,0 +1,40 @@
+.box{
+    padding: 30px 0;
+    border: 1px solid red;
+}
+.posts{
+    background-color: green;
+    @extend .box 
+}
+.product{
+    background-color: gray;
+    @extend .box
+}
+.menu{
+    li{
+        a{
+            color: #333;
+            &.active{
+                color: green;
+                border-bottom: 1px solid green;
+            }
+            &:hover{
+                @extend .active;
+                color: red;
+            }
+        }
+    }
+}
+// mixin không tham số 
+@mixin section-base{
+    padding: 30px 0;
+    border: 1px solid #ccc;
+    .container{
+        width: 1200px;
+        margin: 0 auto;
+    }
+}
+.product{
+    @include section-base;
+    background-color: green;
+}

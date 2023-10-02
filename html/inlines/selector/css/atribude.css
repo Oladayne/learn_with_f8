@@ -1,0 +1,15 @@
+/* .website a[target]{
+    color: brown;
+} */
+/* .website a[href="https:/fullstack.edu.vn"]{
+    color: brown;
+} */
+/* .website a[href^="https://fullstack.edu.vn"]{
+    color: brown;
+} */
+.website a[href*="fullstack.edu.vn"]{/* (*)chứa tất cả các đoạn có fullstack.edu.vn sẽ thành màu nâu */
+    color: brown;
+}
+.images a[href$=".jpg"]{
+    color: red;
+}

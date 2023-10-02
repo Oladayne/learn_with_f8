@@ -1,0 +1,25 @@
+/* *{
+    color: #000;
+} */
+.box h2 ~ p , .box h2 ~ div p {
+    color: red;
+}
+.content h2 + h2 {
+    color: red;
+} 
+.todos input:checked ~ span{
+    color: red;
+}
+/*chon tất ca cả thuộc tính hoặc class/*
+#title :trỏ đến ID
+titile : trỏ đến thẻ
+.title : trỏ đến class
+.box h2 : trỏ đến class của thẻ bên ngoài h2 
+.box > h2 : trỏ đến class của thẻ bên ngoài và h2 là thẻ con của nó 
+h1.name : trỏ đến class name tại thẻ của nó 
+h1.name#frirst : trỏ đến id tại thẻ mang class name
+.box h2 ~ div p : trỏ đến thẻ p trong thẻ div tròng 1 thẻ div lớn hơn  
+~ trỏ đến thẻ nằm sau 
+.content p + h2 : trỏ đến thẻ p trong thẻ h2 có chứa class content
++ là liền kề sau đấy 
+~ tất cả các thẻ liên quan sau đấy 

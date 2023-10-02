@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .product{
+            width: 200px;
+            border: 1px solid #ddd;
+            margin: 30px auto ;
+            position: relative;
+        }
+        .product .product-info{
+            padding: 15px;
+         
+        }
+        .product img{
+            max-width: 100%;
+            height: auto;
+            display: block;
+            border: 1px solid red;
+          
+        }
+      .product .product-images{
+        position:relative;
+      }
+        .product .sale{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background-color: red;
+            color: #ddd;
+            border-radius: 15px;
+            font-size: 0.7rem;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="product">
+       <div class="product-images">
+        <span class="sale">-30%</span>
+        <img src="https://i.pinimg.com/236x/47/60/66/4760667363922914a28b0fcb04362313.jpg" alt="">
+       </div>
+        <div class="product-info">
+            <h1>San Pham 1</h1>
+            <p>Gia : 12.000.000 d</p>
+        </div>
+    </div>
+</body>
+</html>

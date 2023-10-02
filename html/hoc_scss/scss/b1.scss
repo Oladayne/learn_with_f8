@@ -1,0 +1,106 @@
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.2;
+    color: #333;
+}
+.header .logo{
+    max-height: 150px;
+}
+.header{
+    padding: 20px 0;
+    .header-inner{
+        display: flex;
+        justify-content: center;
+        .logo{
+            max-width: 150px;
+            img{
+                max-width: 100%;
+                height: auto;
+            }
+        }
+        .menu{
+            ul{
+                list-style: none;
+                display: flex;
+                li{
+                    a{
+                        display: block;
+                        text-decoration: none;
+                        &:hover{
+                            background-color: green;
+                            &::after{
+                                content: "";
+                            }
+                        }
+                        &::before{
+                            content: "";
+                        }
+                    }
+                    +li{
+                        >a{
+                            border: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// footer.footer{
+//     padding: 30px 0;
+// }
+// footer.footer ul{
+//     display: flex;
+//     justify-content: center;
+// }
+// footer.footer ul.menu{
+//     list-style: none;
+// }
+$footerCopyright:".copyright";
+$footerCopyrightProperty:"color";
+$fontSize:20;
+footer{
+    &.footer{
+        padding: 30px;
+        ul{
+            display: flex;
+            justify-content: center;
+            &.menu{
+                list-style: none;
+            }
+        }
+        #{$footerCopyright} {
+            text-align: center;
+            #{$footerCopyrightProperty}:green;
+            font-size: $fontSize + 0%;
+        }
+    }
+}
+.box{
+    padding: 20px 0;
+}
+$number:0;
+@if ($number>0){
+    .box-2{
+        padding: 40x 0;
+    }
+}
+$width:150;
+.w-#{width}{
+   @if($width > 0 and $width <=100 ){
+    width: #{width +0%};
+   } @else if ($width <=0){
+    width: 0;
+   }@else{
+    width: 100%;
+   }
+}
+
+$prefix : col ;
+$breakpoint: lg;
+$number:5;
+$seletor: #{"." + $prefix + "-" +$number};
+@if($breakpoint != ""){
+    $selector:#{"." + $prefix + $breakpoint + "-" + $number}
+}
+

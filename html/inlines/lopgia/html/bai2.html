@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .checked input:checked + span{
+            color: red;
+        }
+        .product h2:not(.active):not(.ignore){
+            color: red;
+        }
+        .products h2:first-child{
+            color: red;
+        }
+        .products h2:last-child{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="checkbox">
+        <input type="checkbox">
+        <span>checked</span>
+    </div>
+    <div class="product">
+        <h2>sản phẩm 1</h2>
+        <h2>sản phẩm 2 </h2>
+        <h2 class="active">sản phẩm 3</h2>
+        <h2>sản phẩm 4</h2>
+        <h2 class="ignore">sản phẩm 5</h2>
+    </div>
+    <div class="products">
+        <h2>sản phẩm 1</h2>
+        <h2>sản phẩm 2 </h2>
+        <div>
+            <h2 >sản phẩm 3</h2>
+            <h2>sản phẩm 4</h2>
+        </div>
+        <h2 >sản phẩm 5</h2>
+    </div>
+</body>
+</html>

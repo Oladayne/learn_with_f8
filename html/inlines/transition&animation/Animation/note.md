@@ -1,0 +1,1 @@
+hiệu ứng của 1 chu kì phụ thuộc vào số % mà mình đư

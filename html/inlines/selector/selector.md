@@ -1,0 +1,9 @@
+. => class
+# => id
+tagname => tagname
+~ => nằm sau
++ => nằm bên cạnh (sau liền kề)
+Khoảng trắng => nằm trong 
+> => con trực tiếp 
+Viết liền => trên cùng 1 thẻ 
+* => chọn tất cả

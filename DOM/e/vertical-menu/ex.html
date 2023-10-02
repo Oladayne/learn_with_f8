@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        ul{
+            width: 30%;
+            height: 40%;
+            background-color: black;
+           color: gray;
+        }
+        .menu2{
+            display: none;
+        }
+        .has-children{
+            display: inline;
+        }
+        .menu li.has-children > a::after{
+            content: "a";
+            float: right;
+            color: wheat;
+        }
+        .menu ul{
+
+        }
+        .open{
+            display: inline;
+        }
+        .menu li.has-children.icon-open > a::after{
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+    <ul class="menu">
+        <li>about</li>
+        <li><a href="">services</a>
+            <ul class="menu2">
+                <li>link1</li>
+                <li>link2</li>
+                <li>link3</li>
+            </ul>
+        </li>
+        <li>clients</li>
+        <li>contact</li>
+        <li><a href="">dropdown</a>
+            <ul class="menu2">
+                <li>link1</li>
+                <li>link2</li>
+                <li>link3</li>
+            </ul>
+        </li>
+        <li>search</li>
+    </ul>
+   
+    <script src="ex.js"></script>
+</body>
+</html>

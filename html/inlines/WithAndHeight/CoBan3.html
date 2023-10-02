@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .block{
+            width: 300px;
+            height: 300px;
+            max-width: 400px;
+            min-width: 200px;
+            background: green;
+            color: white;
+        }
+        .image{
+            width: 300px;
+            height: 500px;
+            border: 1px solid red;
+        }
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+        .image img{
+            max-width: 100%;
+        }
+        /* width height sẽ chạy từ min đến max  
+        để fix layout ảnh chuẩn để max-width 100% và height auto*/
+    </style>
+</head>
+<body>
+    <div class="block">
+        F8- Học Lập Trình 
+    </div>
+    <div class="image">
+        <img src="https://i.pinimg.com/236x/65/32/f7/6532f7bf2351ce6cff02a8b6d813f63c.jpg" alt="">
+    </div>
+</body>
+</html>
