@@ -16,6 +16,7 @@ var f8 = {
         // root.innerHTML = option.template
         var templateEl = document.createElement("template");
         templateEl.innerHTML = option.template;
+        console.log(templateEl);
         var templateNode = templateEl.content.cloneNode(true);
         // console.log([templateNode]);
         // root.append(templateNode)
@@ -23,7 +24,7 @@ var f8 = {
             var length = element.getAttribute("v-length");
             if (length) {
                 var count = length
-                for (var i = 0; i < length - 1; i++) {
+                for (var i = 0; i < length; i++) {
                     count--;
                     var elementNode = element.cloneNode(true);
                     elementNode.innerHTML=elementNode.innerHTML.replaceAll('{index}',count,)
