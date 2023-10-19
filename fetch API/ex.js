@@ -21,7 +21,7 @@ get/users => Endpoint
 + fetch-> trả về promise
 + thư viện 
  */
-const serverApi = `http://localhost:3000`;
+const serverApi = `https://gnmyzm-8080.csb.app`;
 fetch(`${serverApi}/users`).then((response) => {
     console.log(response);
     // lấy thông tin của Response trả về
